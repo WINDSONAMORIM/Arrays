@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+    padding-bottom: 10px;    
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    background-color: rgba(14, 11, 184, 0.795);
+    align-items: center;
+    color: white;
+}
+
+.menu{
+    display: none;
+    float: left;
+    width: 10vw;
+    margin-left: 20px;
+}
+
+#iconMenu{
+    width: 2%;
+    height: 50%;
+    margin: 10px;
+}
+
+#batata{
+    position: absolute;
+    top: 1vh;
+    right:2vw;    
+    width: 10vw;
+    height: 20vh;
+}
+
+ul li{   
+   list-style: none;
+}
+
+ul li a{
+    text-decoration: none; 
+}
+
+main{
+    width: 99vw;
+    height: 85vh;
+    padding: 5px;         
+}
+
+section{
+    height: 85vh;
+    padding: 5px;   
+    
+}
+
+article{
+    position: absolute;
+    top: 15vh;
+    right: 15vw;    
+    width: 20vw;
+    height: 40vh;
+}
+
+input{
+    margin: 5px;
+}
+
+#button{
+    border-radius: 10px;
+    background-color: rgb(36, 33, 197);
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-color: rgb(146, 146, 218);
+}
+
+#tabelaResumo{
+    width: 30vw
+}
+
+#tabelaResumo th {
+    font-size: 1em;    
+}
+
+#tabelaLista{
+    width: 95vw
+}
+
+#tabelaLista th {
+    background-color: #06055e;
+    color: white;
+    font-size: 1.3em;    
+}
+
+
+tr:nth-child(even) {
+    background-color: #f2f2f2}
+
+tr, td {
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+}
+
+tr:hover {
+    background-color: #3b29df;
+    color: white}

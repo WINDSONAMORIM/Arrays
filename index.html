@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img id="iconMenu" src="./assets/images/menu-aberto.png" alt="iconMenu">
+        <img id="batata" src="./assets/images/batata.png" alt="">
+        <h1>Lista de Exercícios Java Script</h1>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li>Exercício 1</li>
+            <li>Exercício 2</li>
+           
+        </ul>
+    </nav>
+<main class="principal">      
+        <section class="atividade">
+            <h1>Exercícios Arrays</h1>
+            <form>
+                <label for="inputNome">Digite seu nome: </label>
+                <input id="inputNome" type="text" name="inputNome"><br><br>
+                <label for="">Sexo: </label>
+                <input type="radio" name="sexo" id="masculino" value="M" checked>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="feminino" value="F">
+                <label for="feminino">Feminino</label><br><br>
+                <label for="inputSalario">Digite seu salário: </label>
+                <input id="inputSalario" type="number" name="inputSalario"><br><br>
+                <input id="button" type="button" value="Inserir" onclick="inserir()">
+            </form>
+            <br>
+            <div>
+                <table id="tabelaLista">
+                    <tr>
+                      <th>Nome</th>
+                      <th>Sexo</th>
+                      <th>Salário</th>
+                    </tr>
+                  </table>                
+            </div>
+            <br>
+        </section>
+        <article>
+            <table id="tabelaResumo">
+                <tr>
+                  <th colspan="2">Cadastradas</th>
+                  <th>Salário</th>                 
+                </tr>
+                <tr>  
+                  <th>Mulheres</th>
+                  <th id="totalF"></th>
+                  <th id="salF"></th>
+                </tr>
+                <tr>  
+                  <th>Homens</th>
+                  <th id="totalM"></th>
+                  <th id="salM"></th>
+                </tr>
+                <tr>
+                    <th>Total</th>
+                    <th id="totalCadastrados"></th>
+                    <th id="totalSalarios"></th>
+                </tr>
+            </table>
+            
+
+        </article>
+    </main>
+</body>
+<script src="./scripts/script.js"></script>
+</html>
