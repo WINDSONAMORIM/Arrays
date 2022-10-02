@@ -91,7 +91,8 @@ function inserir(){
     pessoa.nome = document.getElementById('inputNome').value;
     const sexo = document.getElementsByName('sexo');   
     sexo[0].checked ? pessoa.sexo = "M" : pessoa.sexo = "F"     
-    pessoa.salario = document.getElementById('inputSalario').value;
+    pessoa.salario = Number(document.getElementById('inputSalario').value);
+    console.log(pessoa.salario)
 
         if(validaCampos(pessoa.nome, pessoa.salario)){            
             console.log(pessoa)
@@ -121,6 +122,7 @@ function resumo(){
     const totSalF = pessoasFeminino.reduce((tot, next)=>{
         return tot + next.salario
     },0)
+    salF.innerHTML = moeda(Number(totSalF))
 
     const pessoasMasculino = pessoas.filter((pessoa) =>{
         return pessoa.sexo == 'M'})
@@ -129,14 +131,13 @@ function resumo(){
     const totSalM = pessoasMasculino.reduce((tot, next)=>{
         return tot + next.salario
     },0)
+    salM.innerHTML = moeda(Number(totSalM))
 
     const totSalaraio = pessoas.reduce((tot, next)=>{
         return tot + next.salario
     },0)  
     
-    totalSalarios.innerHTML = moeda(totSalaraio)
-    salF.innerHTML = moeda(totSalF)
-    salM.innerHTML = moeda(totSalM)
+    totalSalarios.innerHTML = moeda(Number(totSalaraio))    
 }
 
 function validaCampos(nome, salario){
